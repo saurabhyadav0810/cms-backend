@@ -64,37 +64,6 @@ export const verifySignupOtp = async (req, res) => {
 };
 
 
-// export const login = async (req, res) => {
-//   try {
-//     const { email, password } = req.body;
-
-//     if (!email || !password) {
-//       return res.status(400).json({
-//         success: false,
-//         message: "Email and password required"
-//       });
-//     }
-
-//     const result = await loginService(email, password);
-    
-
-//     res.status(200).json({
-//       success: true,
-//       message: "Login successful",
-//       ...result
-//     });
-//   } catch (error) {
-//     res.status(401).json({
-//       success: false,
-//       message: error.message
-//     });
-//   }
-// };
-
-
-// //cookies version  
-
-
 export const login = async (req, res) => {
   try {
     const { email, password } = req.body;
